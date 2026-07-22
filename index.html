@@ -10,64 +10,602 @@
 
     <meta
         name="description"
-        content="Professional portfolio and virtual CV of Rudi van Vuuren."
+        content="Professional portfolio and virtual CV of Rudi van Vuuren, an Information Technology student and systems enthusiast."
     >
 
-    <title>Rudi van Vuuren | Portfolio</title>
+    <meta
+        name="author"
+        content="Rudi van Vuuren"
+    >
+
+    <title>Rudi van Vuuren | IT Portfolio</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#home">Rudi van Vuuren</a>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="#home">
+                Rudi van Vuuren
+            </a>
 
-            <ul>
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Rudi van Vuuren</h1>
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    Information Technology Student
+                </p>
 
-            <p>
-                Information Technology student, systems enthusiast,
-                and technology-focused problem solver.
-            </p>
+                <h1>
+                    Linux Enthusiast.
+                    Problem Solver.
+                </h1>
 
-            <a href="#projects">View Projects</a>
+                <p class="hero-summary">
+                    I am Rudi van Vuuren, a third-year Information Technology
+                    student with hands-on experience in Linux systems,
+                    web development, databases, cloud platforms, technical
+                    support, and project coordination.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">
+                        View Projects
+                    </a>
+
+                    <a
+                        class="button button-secondary"
+                        href="assets/documents/rudi-van-vuuren-cv.pdf"
+                        download
+                    >
+                        Download CV
+                    </a>
+                </div>
+
+                <ul class="hero-links" aria-label="Professional links">
+                    <li>
+                        <a
+                            href="https://github.com/CoderinaPurpr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:rvnvrn@gmail.com">
+                            Email
+                        </a>
+                    </li>
+
+                    <li>
+                        <span>Potchefstroom, South Africa</span>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="terminal-card" aria-label="Professional summary">
+                <div class="terminal-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-body">
+                    <p>
+                        <span class="terminal-prompt">$</span>
+                        whoami
+                    </p>
+
+                    <p class="terminal-output">
+                        Rudi van Vuuren
+                    </p>
+
+                    <p>
+                        <span class="terminal-prompt">$</span>
+                        current_focus
+                    </p>
+
+                    <p class="terminal-output">
+                        Linux systems, web development, databases,
+                        networking, and cloud deployment
+                    </p>
+
+                    <p>
+                        <span class="terminal-prompt">$</span>
+                        status
+                    </p>
+
+                    <p class="terminal-output">
+                        Available for graduate and junior IT opportunities
+                    </p>
+                </div>
+            </aside>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Practical technology backed by broad experience</h2>
+            </div>
+
+            <div class="about-grid">
+                <div>
+                    <p>
+                        I am completing a Bachelor of Science in Information
+                        Technology at North-West University. My academic focus
+                        includes operating systems, networking, databases,
+                        software engineering, systems administration, and
+                        project management.
+                    </p>
+
+                    <p>
+                        Alongside my studies, I have developed practical systems
+                        and web projects involving Linux servers, SSH,
+                        Docker-based services, Cloudflare deployment,
+                        PostgreSQL, MySQL, JavaScript, and technical
+                        documentation.
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        My earlier work in education, interpretation, consulting,
+                        and operations gave me extensive experience in stakeholder
+                        communication, training, project coordination, process
+                        improvement, and problem-solving.
+                    </p>
+
+                    <p>
+                        I am particularly interested in roles involving systems
+                        administration, infrastructure support, networking,
+                        databases, cloud technologies, and technical operations.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">Capabilities</p>
+                <h2>Technical skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Systems Administration</h3>
+
+                    <ul class="tag-list">
+                        <li>Linux</li>
+                        <li>Bash</li>
+                        <li>SSH</li>
+                        <li>Systemd</li>
+                        <li>UFW</li>
+                        <li>Monitoring</li>
+                        <li>Backup and Recovery</li>
+                    </ul>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Web and Cloud</h3>
+
+                    <ul class="tag-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Cloudflare Pages</li>
+                        <li>Cloudflare Workers</li>
+                        <li>GitHub Pages</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Databases</h3>
+
+                    <ul class="tag-list">
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>Cloudflare D1</li>
+                        <li>SQL Queries</li>
+                        <li>Database Design</li>
+                    </ul>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Infrastructure and Tools</h3>
+
+                    <ul class="tag-list">
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                        <li>Jellyfin</li>
+                        <li>Syncthing</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Programming</h3>
+
+                    <ul class="tag-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>HTML and CSS</li>
+                    </ul>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Professional Strengths</h3>
+
+                    <ul class="tag-list">
+                        <li>Project Coordination</li>
+                        <li>Stakeholder Engagement</li>
+                        <li>Problem-Solving</li>
+                        <li>Technical Support</li>
+                        <li>Training</li>
+                        <li>Process Improvement</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Featured projects</h2>
+
+                <p>
+                    A selection of practical projects covering systems
+                    administration, web development, cloud deployment,
+                    databases, and educational technology.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-number">01</div>
+
+                    <h3>Linux Home Server</h3>
+
+                    <p>
+                        Configured and maintained a headless Ubuntu server for
+                        file synchronisation, media streaming, remote
+                        administration, and containerised services.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li>Ubuntu Server</li>
+                        <li>SSH</li>
+                        <li>Docker</li>
+                        <li>Syncthing</li>
+                        <li>Jellyfin</li>
+                        <li>UFW</li>
+                    </ul>
+
+                    <a href="#contact">
+                        Project details available on request
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+
+                    <h3>IELTS Online Assessment Platform</h3>
+
+                    <p>
+                        Developed a browser-based assessment platform with
+                        candidate submissions, scoring workflows, database
+                        storage, audio integration, and administrative tools.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li>JavaScript</li>
+                        <li>Cloudflare Pages</li>
+                        <li>Workers</li>
+                        <li>D1</li>
+                        <li>R2</li>
+                    </ul>
+
+                    <a href="#contact">
+                        Private project
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+
+                    <h3>Miro Word Counter</h3>
+
+                    <p>
+                        Built and deployed a lightweight Miro application that
+                        counts words, tracks writing targets, and provides live
+                        feedback for educational writing tasks.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li>Miro SDK</li>
+                        <li>JavaScript</li>
+                        <li>Cloudflare Pages</li>
+                        <li>UI Design</li>
+                    </ul>
+
+                    <a href="https://github.com/CoderinaPurpr"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View GitHub
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">04</div>
+
+                    <h3>AI-Assisted Workflow Development</h3>
+
+                    <p>
+                        Designed structured AI-assisted workflows for
+                        documentation, assessment development, administrative
+                        work, validation, and process improvement.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li>Generative AI</li>
+                        <li>Prompt Design</li>
+                        <li>Workflow Automation</li>
+                        <li>Quality Control</li>
+                    </ul>
+
+                    <a href="#contact">
+                        Project overview
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">05</div>
+
+                    <h3>Virtual CV Portfolio</h3>
+
+                    <p>
+                        Designed and developed this responsive portfolio website
+                        to present my technical skills, professional experience,
+                        projects, and career direction.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>GitHub Pages</li>
+                        <li>Responsive Design</li>
+                    </ul>
+
+                    <a
+                        href="https://github.com/CoderinaPurpr/virtual-cv"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Repository
+                    </a>
+                </article>
+            </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
+        <section class="section" id="experience">
+            <div class="section-heading">
+                <p class="eyebrow">Professional History</p>
+                <h2>Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-date">
+                        2019 – Present
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Language Learning Specialist</h3>
+                        <p class="timeline-organisation">
+                            Freelance · Potchefstroom
+                        </p>
+
+                        <p>
+                            Design and deliver technology-enabled learning
+                            solutions, manage online learning environments,
+                            develop digital resources, and support end-user
+                            adoption of educational technologies.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">
+                        2014 – 2022
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Educational Interpreter</h3>
+                        <p class="timeline-organisation">
+                            North-West University
+                        </p>
+
+                        <p>
+                            Supported technology-enabled academic environments,
+                            produced multimedia and technical documentation,
+                            assisted users with digital platforms, and
+                            collaborated with academic stakeholders.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">
+                        2010 – 2015
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Assistant Director of Studies</h3>
+                        <p class="timeline-organisation">
+                            Study Innovations · Astana, Kazakhstan
+                        </p>
+
+                        <p>
+                            Managed schedules, resources, training programmes,
+                            operational procedures, organisational projects,
+                            and stakeholder communication.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-date">
+                        2007 – 2010
+                    </div>
+
+                    <div class="timeline-content">
+                        <h3>Casino Host and Events Manager</h3>
+                        <p class="timeline-organisation">
+                            Carnival Cruise Line
+                        </p>
+
+                        <p>
+                            Managed events, budgets, inventory, promotions,
+                            customer engagement, and high-volume operational
+                            activities.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
+        <section class="section" id="education">
+            <div class="section-heading">
+                <p class="eyebrow">Development</p>
+                <h2>Education and certifications</h2>
+            </div>
+
+            <div class="education-grid">
+                <article class="education-card">
+                    <p class="education-date">
+                        Expected 2026
+                    </p>
+
+                    <h3>BSc Information Technology</h3>
+
+                    <p>
+                        North-West University
+                    </p>
+
+                    <p>
+                        Focus areas include systems administration, networking,
+                        databases, operating systems, software engineering,
+                        artificial intelligence, and project management.
+                    </p>
+                </article>
+
+                <article class="education-card">
+                    <p class="education-date">
+                        Certifications
+                    </p>
+
+                    <h3>Selected Professional Development</h3>
+
+                    <ul>
+                        <li>Cisco Linux Essentials</li>
+                        <li>Cisco Introduction to Cybersecurity</li>
+                        <li>IBM Data Science Foundations</li>
+                        <li>IBM Big Data Foundations</li>
+                        <li>IBM Blockchain Essentials</li>
+                        <li>IBM Spark Level 1</li>
+                    </ul>
+                </article>
+
+                <article class="education-card">
+                    <p class="education-date">
+                        In Progress
+                    </p>
+
+                    <h3>Current Certifications</h3>
+
+                    <ul>
+                        <li>Cisco Networking Basics</li>
+                        <li>Cisco Ethical Hacking</li>
+                        <li>CS50 Introduction to SQL</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s connect</h2>
+
+                <p>
+                    I am interested in graduate, junior, internship, and
+                    project-based opportunities in systems administration,
+                    infrastructure support, networking, databases, and web
+                    technologies.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:rvnvrn@gmail.com">
+                    <span>Email</span>
+                    <strong>rvnvrn@gmail.com</strong>
+                </a>
+
+                <a
+                    class="contact-card"
+                    href="https://github.com/CoderinaPurpr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>GitHub</span>
+                    <strong>CoderinaPurpr</strong>
+                </a>
+
+                <div class="contact-card">
+                    <span>Location</span>
+                    <strong>Potchefstroom, South Africa</strong>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Rudi van Vuuren</p>
+    <footer class="site-footer">
+        <p>
+            © <span id="current-year"></span> Rudi van Vuuren.
+            Built with HTML, CSS, and JavaScript.
+        </p>
     </footer>
 
     <script src="js/script.js"></script>
